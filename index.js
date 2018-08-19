@@ -1,31 +1,43 @@
 console.log("lets go knicks")
-//array of div elements with a class pixel and 400 elements called pixels
 document.addEventListener('DOMContentLoaded', function () {
 let drawingMode = "erasing"
 let pixel = "<div class='pixel'></div>";
+// let circlePixel = "<div class='circlePixel'></div>"
 let box = [];
+let circles = [];
 let pixelCanvas = document.getElementById("pixel-canvas");
+let palette = document.getElementById("palette")
 let pressed = false;
 
-for (var i = 0; i < 2880; i += 1) {
+//for canvas
+for (let i=0; i<2880; i++) {
   box.push(pixel);
 };
+//for palette
+// for(let i=0; i<5; i++){
+//   circles.push(circlePixel)
+// }
 
 pixelCanvas.innerHTML = box.join("");
+// palette.innerHTML = circles.join("")
 
 //for the drawing
-pixelCanvas.addEventListener("mouseover", function (event) {
+// pixelCanvas.addEventListener("click", function(e){
+//   e.target.classList.add("painted")
+// })
+pixelCanvas.addEventListener("mouseover", function(event) {
   if (pressed) {
-    event.target.classList.add("filled-black")
+    event.target.classList.add("painted")
   }
 });
 
-pixelCanvas.addEventListener("mousedown", function (event) {
+pixelCanvas.addEventListener("mousedown", function(event) {
   pressed = true;
 })
 
 
-document.addEventListener("mouseup", function (event) {
+document.addEventListener("mouseup", function(event) {
   pressed = false;
 })
+
 })

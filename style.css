@@ -1,12 +1,39 @@
 #pixel-canvas {
   width: 720px;
 }
+#palette {
+  width: 360px
+}
+#circlePixelGreen {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: green;
+}
+#circlePixelBlue {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: blue;
+}
+#circlePixelOrange {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: orange;
+}
 .pixel {
   width: 10px;
   height: 10px;
   float: left;
   border: 1px solid black;
 }
-.filled-black {
-  background-color: black
+.painted {
+  background-color: red
 }
