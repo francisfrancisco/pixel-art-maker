@@ -22,22 +22,28 @@ pixelCanvas.innerHTML = box.join("");
 // palette.innerHTML = circles.join("")
 
 //for the drawing
-// pixelCanvas.addEventListener("click", function(e){
-//   e.target.classList.add("painted")
+pixelCanvas.addEventListener("click", function(e){
+  e.target.classList.add("painted")
+})
+
+// palette.addEventListener("click", function(e){
+//
+//   window.document.classList.painted = e.target.textContent
 // })
-pixelCanvas.addEventListener("mouseover", function(event) {
-  if (pressed) {
-    event.target.classList.add("painted")
-  }
-});
 
-pixelCanvas.addEventListener("mousedown", function(event) {
-  pressed = true;
-})
-
-
-document.addEventListener("mouseup", function(event) {
-  pressed = false;
-})
+// pixelCanvas.addEventListener("mouseover", function(event) {
+//   if (pressed) {
+//     event.target.classList.add("painted")
+//   }
+// });
+//
+// pixelCanvas.addEventListener("mousedown", function(event) {
+//   pressed = true;
+// })
+//
+//
+// document.addEventListener("mouseup", function(event) {
+//   pressed = false;
+// })
 
 })

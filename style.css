@@ -5,28 +5,34 @@
   width: 360px
 }
 #circlePixelGreen {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   float: left;
   border: 1px solid black;
   border-radius: 50%;
   background-color: green;
+  color: green
+}
+#circlePixelGreen p, #circlePixelBlue p, #circlePixelOrange p{
+  font-size: 1px;
 }
 #circlePixelBlue {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   float: left;
   border: 1px solid black;
   border-radius: 50%;
   background-color: blue;
+  color: blue
 }
 #circlePixelOrange {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   float: left;
   border: 1px solid black;
   border-radius: 50%;
   background-color: orange;
+  color: orange;
 }
 .pixel {
   width: 10px;
